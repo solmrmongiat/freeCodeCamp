@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please help us improve your experience by filling out this form</p>
+  <form action="https://survey-demo.freecodecamp-org" method="post" id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Enter Your Name: <input id="name" type="text" name="name" required placeholder="John Doe"></label>
+      
+      <label id="email-label" for="email">Enter Your Email: <input id="email" type="email" name="email" required placeholder="johndoe@gmail.com"></label>
+      
+      <label id="number-label" for="age">Enter Your Age (optional): <input id="number" type="number" min="13" max="120" name="age" placeholder="26"></label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Which role defines you best?</legend>
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Part Time Job</option>
+          <option value="4">Other</option>
+        </select>
+    </fieldset>
+    
+    <fieldset>
+      <legend>By studying at FreeCodeCamp, which area of your life are you looking to improve?</legend>
+      <label for="personal">
+        <input type="radio" name="area-improvement" id="personal" class="inline" value="personal"> Personal</label>
+      <label for="professional">
+        <input type="radio" name="area-improvement" id="professional" class="inline" value="professional"> Professional
+        </label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Which of these studying methods do you prefer? (Select only one)</legend>
+      <input type="checkbox" id="by-myself" name="study-methods" value="by-myself"> <label for="by-myself">By myself</label>
+      <input type="checkbox" id="in-group" name="study-methods" value="in-group"> <label for="in-group">In group</label>
+      <input type="checkbox" id="teacher-tutor" name="study-methods" value="teacher-tutor">With a teacher/tutor</label>
+    </fieldset>
+
+    <fieldset>
+      <label> Was this survey difficult in any way?</label>
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+      <label for="comments">Anything you think we should now...</label>
+    <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
